@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: "Helvetica";
+    font-size: 17px;
+}
+
+.main-header {
+    width: 100%;
+    height: 980px;
+    background-image: url("websiteHomePic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 85px;
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: -1%;
+    display: block;
+    float: left;
+}
+
+h1 {
+    font-size: 40px;
+
+}
+
+nav {
+    margin-right: 10%;
+    float: right;
+    display: inline-block;
+    height: 85px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 35px;
+}
+
+li {
+    font-size: 16px;
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul li a:hover {
+    cursor: default;
+    color: #855E42;
+}
+
+hr {
+    clear: both;
+    width: 80%;
+    border: 1px solid #000000;
+}
+
+h2 {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 15%;
+    margin-bottom: 0;
+    color: white;
+    background: linear-gradient(to right, #000000 20%, #9D7E68 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    visibility: hidden;
+    animation: show 10s 2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    from {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
+
+.about {
+    width: 60%;
+    height: 250px;
+    float: left;
+}
+
+.about article {
+    height: 200px;
+    padding: 2%;
+    margin: 10px 10px 10px;
+    margin-left: 15%;
+}
+
+span {
+    font-weight: bold;
+}
+
+.about article hr {
+    width: 8%;
+    float: left;
+    border: 2px solid #855E42;
+}
+
+p {
+    clear: both;
+    margin-top: 0;
+}
+
+aside {
+    width: 40%;
+    height: 250px;
+    float: left;
+}
+
+aside article {
+    height: 200px;
+    padding: 2%;
+    margin: 10px 10px 10px;
+    margin-right: 20%;
+}
+
+aside p {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+aside hr {
+    width: 12%;
+    float: left;
+    border: 2px solid #855E42;
+}
+
+.social-media {
+    clear: both;
+}
+
+.social-media .fa {
+    text-decoration: none;
+    font-size: 40px;
+    color: #000000;
+    margin: 10px 0px 0px 5px;
+    cursor: default;
+}
+
+.fa-facebook:hover {
+    color: #1877f2;
+}
+
+.fa-pinterest:hover {
+    color: #bd081c;
+}
+
+.fa-instagram:hover {
+    color: #ffdc7d;
+}
+
+.fa-youtube:hover {
+    color: #ff0000;
+}
