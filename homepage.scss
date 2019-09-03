@@ -1,0 +1,146 @@
+$woodColor: #9D7E68;
+
+body {
+    margin: 0;
+    font-family: "Helvetica";
+    font-size: 17px;
+}
+
+.main-header {
+    width: 100%;
+    height: 980px;
+    background-image: url("officeDesign.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    #logo-container {
+        height: 85px;
+        padding: 5px;
+        margin-left: 10%;
+        display: block;
+        float: left;
+        #logo {
+            font-size: 32px;
+        }
+    }
+    nav {
+        margin-right: -10%;
+        display: inline-block;
+        height: 85px;
+        ul {
+            list-style-type: none;
+            margin-top: 35px;
+            li {
+                font-size: 16px;
+                display: inline;
+                padding: 10px;
+                margin: 10px;
+                text-transform: uppercase;
+                a {
+                    text-decoration: none;
+                    color: #000000;
+                    &:hover {
+                        cursor: default;
+                        color: $woodColor;
+                    }
+                }
+            }
+        }
+    }
+    #top-line {
+        clear: both;
+        width: 80%;
+        border: 1px solid #000000;
+    }
+    #slogan {
+        text-align: center;
+        font-size: 80px;
+        margin-top: 15%;
+        background: linear-gradient(to right, #000000 20%, $woodColor 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        visibility: hidden;
+        animation: show 10s 2s 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes show {
+    from {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+#about {
+    width: 60%;
+    height: 250px;
+    float: left;
+    article {
+        height: 200px;
+        padding: 2%;
+        margin: 10px 10px 10px;
+        margin-left: 15%;
+        p {
+            clear: both;
+            margin-top: 0;
+        }
+    }
+}
+
+.article-title {
+    font-weight: bold;
+    span {
+        font-weight: normal;
+    }
+}
+
+.article-line {
+    width: 50px;
+    float: left;
+    border: 2px solid $woodColor;
+}
+
+aside {
+    width: 40%;
+    height: 250px;
+    float: left;
+    article {
+        height: 200px;
+        padding: 2%;
+        margin: 10px 10px 10px;
+        margin-right: 20%;
+    }
+}
+
+.social-media {
+    clear: both;
+    .fa {
+        text-decoration: none;
+        font-size: 40px;
+        color: #000000;
+        margin: 10px 0px 0px 5px;
+        cursor: default;
+    }
+    .fa-facebook:hover {
+        color: #1877f2;
+    }
+    
+    .fa-pinterest:hover {
+        color: #bd081c;
+    }
+    
+    .fa-instagram:hover {
+        color: #ffdc7d;
+    }
+    
+    .fa-youtube:hover {
+        color: #ff0000;
+    }
+}
